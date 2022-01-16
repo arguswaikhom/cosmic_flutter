@@ -21,10 +21,7 @@ class _HomePageState extends State<HomePage> {
     return Stack(
       fit: StackFit.expand,
       children: [
-        Positioned(
-          top: 0.0,
-          child: Image.asset(kImgBg),
-        ),
+        Image.asset(kImgBg, fit: BoxFit.cover),
         Scaffold(
           appBar: AppBar(title: const Text(AppString.appName)),
           body: Padding(
