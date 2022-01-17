@@ -1,4 +1,3 @@
-import 'package:cosmic_flutter/src/constants/app_string.dart';
 import 'package:cosmic_flutter/views/pages/home_page.dart';
 import 'package:flirt_with_style/flirt_with_style.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
     );
 
     return MaterialApp(
-      title: AppString.appName,
+      title: 'Cosmic Flutter',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.transparent,
