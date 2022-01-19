@@ -1,16 +1,8 @@
-# cosmic_flutter
+# Cosmic Flutter
+Cosmic Flutter is a galley of open-source Flutter applications. All the application(s) in this app are publicly available and are free to use. Apps in the Cosmic Flutter are useable right away inside the Cosmic Flutter app itself.
 
-Cosmic Flutter
+Currently, all the applications in the Cosmic Flutter are developed by me. But if you have a design and want to contribute, pull requests are more than welcome.
 
-## Getting Started
+![enter image description here](https://github.com/arguswaikhom/ResourceBank/blob/master/arguswaikhom/FWF%20Ingredients%20Squares.png?raw=true)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![enter image description here](https://github.com/arguswaikhom/ResourceBank/blob/master/arguswaikhom/FWF%20Ingredients%20Squares%20%281%29.png?raw=true)
