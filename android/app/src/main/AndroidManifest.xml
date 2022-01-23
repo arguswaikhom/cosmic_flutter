@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.flirtwithflutter.cosmicflutter.cosmic_flutter">
+    package="com.flirtwithflutter.cosmicflutter">
     <uses-permission android:name="android.permission.INTERNET" />
    <application
-        android:label="cosmic_flutter"
+        android:label="Cosmic Flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,4 +1,4 @@
-package com.flirtwithflutter.cosmicflutter.cosmic_flutter
+package com.flirtwithflutter.cosmicflutter
 
 import io.flutter.embedding.android.FlutterActivity
 
