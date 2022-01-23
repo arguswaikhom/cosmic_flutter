@@ -1,6 +1,7 @@
 import 'package:cosmic_flutter/views/widgets/linked_icon_button.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class InfoPage extends StatefulWidget {
   const InfoPage({Key? key}) : super(key: key);
@@ -47,10 +48,22 @@ class _InfoPageState extends State<InfoPage> {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: const [
-                LinkedIconButton(iconData: FontAwesomeIcons.instagram),
-                LinkedIconButton(iconData: FontAwesomeIcons.github),
-                LinkedIconButton(iconData: FontAwesomeIcons.linkedin),
-                LinkedIconButton(iconData: FontAwesomeIcons.medium),
+                LinkedIconButton(
+                  iconData: FontAwesomeIcons.instagram,
+                  url: 'https://www.instagram.com/flirtwithflutter/',
+                ),
+                LinkedIconButton(
+                  iconData: FontAwesomeIcons.github,
+                  url: 'https://github.com/arguswaikhom',
+                ),
+                LinkedIconButton(
+                  iconData: FontAwesomeIcons.linkedin,
+                  url: 'https://bit.ly/3eIihyK',
+                ),
+                LinkedIconButton(
+                  iconData: FontAwesomeIcons.medium,
+                  url: 'https://arguswaikhom.medium.com/',
+                ),
               ],
             ),
             Padding(
@@ -69,19 +82,26 @@ class _InfoPageState extends State<InfoPage> {
               ),
             ),
             const SizedBox(height: 16),
-            Text.rich(
-              TextSpan(
-                children: [
-                  const TextSpan(text: 'Build with 💜 by '),
-                  TextSpan(
-                    text: 'Argus Waikhom',
-                    style: textStyle?.copyWith(
-                      fontWeight: FontWeight.bold,
+            InkWell(
+              child: Text.rich(
+                TextSpan(
+                  children: [
+                    const TextSpan(text: 'Build with 💜 by '),
+                    TextSpan(
+                      text: 'Argus Waikhom',
+                      style: textStyle?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        decoration: TextDecoration.underline,
+                      ),
                     ),
-                  ),
-                ],
-                style: textStyle,
+                  ],
+                  style: textStyle,
+                ),
               ),
+              onTap: () async {
+                const String url = 'https://www.instagram.com/arguswaikhom/';
+                if (!await launch(url)) throw 'Could not launch $url';
+              },
             ),
           ],
         ),
