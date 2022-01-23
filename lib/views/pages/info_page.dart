@@ -54,7 +54,7 @@ class _InfoPageState extends State<InfoPage> {
                 ),
                 LinkedIconButton(
                   iconData: FontAwesomeIcons.github,
-                  url: 'https://github.com/arguswaikhom',
+                  url: 'https://github.com/arguswaikhom/cosmic_flutter',
                 ),
                 LinkedIconButton(
                   iconData: FontAwesomeIcons.linkedin,
